@@ -11,17 +11,21 @@ public class FibonacciGeneratorShould {
             "1, 1"
     })
     public void return_the_index_when_asked_for_two_first_numbers(int index, int expected) {
-        assertThat(FibonacciGenerator.generate(index)).isEqualTo(expected);
+        assertThat(getFibonacciNumberFor(index)).isEqualTo(expected);
     }
 
     @Test
     public void return_1_when_asked_for_the_number_with_index_2() {
-        assertThat(FibonacciGenerator.generate(2)).isEqualTo(1);
+        assertThat(getFibonacciNumberFor(2)).isEqualTo(1);
     }
 
     @Test
     public void return_2_when_asked_for_the_number_with_index_3() {
-        assertThat(FibonacciGenerator.generate(3)).isEqualTo(2);
+        assertThat(getFibonacciNumberFor(3)).isEqualTo(2);
+    }
+
+    private static int getFibonacciNumberFor(int index) {
+        return FibonacciGenerator.generate(index);
     }
 }
 
