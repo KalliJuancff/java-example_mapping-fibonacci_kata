@@ -10,7 +10,7 @@ public class FibonacciGeneratorShould {
             "0, 0",
             "1, 1"
     })
-    public void return_the_index_when_asked_for_two_first_numbers(int index, int expected) {
+    public void generate_index_value_for_two_first_numbers(int index, int expected) {
         assertThat(getFibonacciNumberFor(index)).isEqualTo(expected);
     }
 
