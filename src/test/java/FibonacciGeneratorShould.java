@@ -7,6 +7,11 @@ public class FibonacciGeneratorShould {
     public void return_0_when_asked_for_the_0th_number() {
         assertThat(FibonacciGenerator.generate(0)).isEqualTo(0);
     }
+
+    @Test
+    public void return_1_when_asked_for_the_1st_number() {
+        assertThat(FibonacciGenerator.generate(1)).isEqualTo(1);
+    }
 }
 
 
