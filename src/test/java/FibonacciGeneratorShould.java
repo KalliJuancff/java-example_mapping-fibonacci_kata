@@ -18,6 +18,11 @@ public class FibonacciGeneratorShould {
     public void return_1_when_asked_for_the_number_with_index_2() {
         assertThat(FibonacciGenerator.generate(2)).isEqualTo(1);
     }
+
+    @Test
+    public void return_2_when_asked_for_the_number_with_index_3() {
+        assertThat(FibonacciGenerator.generate(3)).isEqualTo(2);
+    }
 }
 
 
