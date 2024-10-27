@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -11,6 +12,11 @@ public class FibonacciGeneratorShould {
     })
     public void return_the_index_when_asked_for_two_first_numbers(int index, int expected) {
         assertThat(FibonacciGenerator.generate(index)).isEqualTo(expected);
+    }
+
+    @Test
+    public void return_1_when_asked_for_the_number_with_index_2() {
+        assertThat(FibonacciGenerator.generate(2)).isEqualTo(1);
     }
 }
 
