@@ -3,6 +3,6 @@ public class FibonacciGenerator {
         if (index <= 1) {
             return index;
         }
-        return index - 1;
+        return generate(index - 1) + generate(index - 2);
     }
 }

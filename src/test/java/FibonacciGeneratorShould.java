@@ -24,6 +24,11 @@ public class FibonacciGeneratorShould {
         assertThat(getFibonacciNumberFor(3)).isEqualTo(2);
     }
 
+    @Test
+    public void return_5_when_asked_for_the_number_with_index_5() {
+        assertThat(getFibonacciNumberFor(5)).isEqualTo(5);
+    }
+
     private static int getFibonacciNumberFor(int index) {
         return FibonacciGenerator.generate(index);
     }
